@@ -1,0 +1,154 @@
+@import "colors";
+
+@media screen and (max-width: 820px) {
+  .home3 {
+    height: 130vh;
+    > div {
+      height: 120vh;
+    }
+  }
+
+  .contact > main {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0%;
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    padding: 0;
+
+    .top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 190px;
+      > .nav-icons {
+        display: block;
+      }
+    }
+    > h1 {
+      text-align: center;
+      width: 100vw;
+      border-bottom: 1px solid black;
+      font-size: 2.3rem;
+    }
+    > .nav-link{
+      display: flex;
+      flex-direction: column;
+
+      >a {
+        text-align: center;
+        width: 100vw;
+        height: 30px;
+        border-bottom: 1px solid black;
+        margin-bottom: 0;
+      }
+    }
+    >.nav-linkUnseen{
+      display: none;
+    }
+  }
+
+  .home {
+    > main {
+      align-items: center;
+      > h1 {
+        font: 400 4rem $text1;
+      }
+    }
+  }
+
+  .home2 {
+    height: 160vh;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+    div {
+      width: 100%;
+    }
+  }
+
+  .home3 {
+    height: 150vh;
+    > div {
+      text-align: center;
+      border-radius: 0;
+      height: 150vh;
+      width: 100%;
+
+      > p {
+        font-size: 1rem;
+        padding: 0.1rem 1rem;
+      }
+    }
+  }
+
+  .home4 {
+    align-items: center;
+    > div {
+      width: 100%;
+      border-radius: 0%;
+      height: unset;
+    }
+  }
+
+  .contact {
+    > main {
+      padding: 2rem 1rem;
+      > h1 {
+        margin: 1rem;
+      }
+      > form {
+        margin: 0%;
+
+        > button {
+          width: 50%;
+          text-align: center;
+        }
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    height: 120vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .left {
+      > h1 {
+        font: 900 2.5rem $text1;
+      }
+      > p {
+        font: 600 1rem $text1;
+      }
+    }
+
+    > .sites {
+      > h5 {
+        font: 500 2rem $text1;
+        height: 20px;
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        height: 269px;
+
+        > a {
+          font: 100 1.3rem $text2;
+        }
+      }
+    }
+  }
+}
